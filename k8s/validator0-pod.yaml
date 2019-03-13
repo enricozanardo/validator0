@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: validator0-pod
+  labels:
+    component: validator0
+spec:
+  containers:
+    - name: tendermint-validator0
+      image: onezerobinary/validator0
+      ports:
+        - containerPort: 3000
