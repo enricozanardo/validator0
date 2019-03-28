@@ -8,9 +8,10 @@ let app = lotion({
     initialState: { messages: [] },
     p2pPort: 30092,
     logTendermint: true,
-    keys: 'privkey0.json'
-    // peers: 'workdernode1:30092'
+    keys: 'privkey0.json',
+    peers: ['workernode1:30092']
 });
+
 
 app.use((state, tx, chainInfo) => {
 
